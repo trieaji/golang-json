@@ -12,7 +12,7 @@ func TestDecodeJSON(t *testing.T) {
 
 	customer := &Customer{}
 
-	err := json.Unmarshal(jsonBytes, customer)
+	err := json.Unmarshal(jsonBytes, customer)//function untuk melakukan konversi data dari json ke tipe data di golang
 	if err != nil {
 		panic(err)
 	}

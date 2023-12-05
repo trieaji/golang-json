@@ -1,0 +1,2 @@
+encode adalah konversi data ke json
+decode adalah konversi dari json ke tipe data di golang

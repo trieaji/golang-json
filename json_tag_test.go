@@ -7,9 +7,9 @@ import (
 )
 
 type Product struct {
-	Id string `json:"id"`
-	Name string `json:"name"`
-	ImageURL string `json:"image_url"`
+	Id string `json:"id"` //`json:"id"` -> json tag
+	Name string `json:"name"`//`json:"name"` -> json tag
+	ImageURL string `json:"image_url"`//`json:"image_url"` -> json tag
 }
 
 func TestJSONTag(t *testing.T) {

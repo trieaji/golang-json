@@ -73,7 +73,7 @@ func TestOnlyJSONArrayComplexDecode(t *testing.T) { //json yg berisikan array
 	jsonString := `[{"Street":"Jujutsu Kaisen","Country":"Japan","PostalCode":"9999"},{"Street":"Jujur Kasian","Country":"Japan","PostalCode":"8888"}]`
 	jsonBytes := []byte(jsonString)
 
-	addresses := &[]Address{}
+	addresses := &[]Address{}// decode json array -> men decode langsung ke array nya
 	err := json.Unmarshal(jsonBytes, addresses)
 	if err != nil {
 		panic(err)
@@ -83,7 +83,7 @@ func TestOnlyJSONArrayComplexDecode(t *testing.T) { //json yg berisikan array
 
 func TestOnlyJSONArrayComplex(t *testing.T) {
 	
-	addresses := []Address{
+	addresses := []Address{// encode json array -> men encode lngsunng ke array nya
 		{
 			Street : "Jujutsu Kaisen",
 			Country : "Japan",

@@ -7,7 +7,7 @@ import (
 )
 
 func logJson(data interface{}) {
-	bytes, err := json.Marshal(data)
+	bytes, err := json.Marshal(data)//function untuk melakukan konversi data ke json adalah Marshal
 	if err != nil {
 		panic(err)
 	}
